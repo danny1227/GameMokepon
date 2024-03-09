@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Barlow+Semi+Condensed:wght@100;400&display=swap');
+
+/* #Displeys
+displey - block // toda la pantalla
+displey - inline // por pedacitos en la misma linea
+displey - inline Block
+*/
+/* #Flexbox para centrar elementos
+Flexbox
+vertiacal o horizontal
+Elementos Padres e hijos
+*/
+
+body{
+    font-family: 'Average Sans', sans-serif;
+    background-color: rgba(5, 10, 53, 0.932);
+}
+
+#seleccionar-mascota{
+    display:     flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    width: 464px;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #7a6eff;
+    border-radius: 10px;
+    border: 1px solid #BEB8FF;
+    vertical-align: middle;
+    padding-top: 4px;
+}
+
+.subtitulo{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+#boton-mascota{
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    background: rgb(128, 255, 238);
+    padding: 10px;
+    margin: 15px;
+    border: 3px solid #9086ff;
+    border-radius: 4px;   
+    font-family: 'Average Sans', sans-serif;
+}
+
+/*
+.radio:checked + .label {
+    width: 9vw;
+    height: 18vh;
+    border-radius: 50%;
+    background-color: rgba(136,188,209,.8);
+    color: #002233;
+    z-index: -1;
+}
+*/
+
+.tarjetas, .tarjetas-ataques{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon{
+    width: 230px;
+    height: 100px;
+    background: #FFFADE;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid hotpink;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+}
+
+.tarjeta-de-mokepon:hover {
+    cursor: pointer;
+}
+
+.tarjeta-de-mokepon p{
+    width: 80px;
+    height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #BEB8FF;
+    border-radius: 10px;
+    border: 1px solid #7a6eff;
+    vertical-align: middle;
+    padding-top: 4px;
+}
+
+.tarjeta-de-mokepon img{
+    width: 80px;
+    background-color: #00C895;
+    border-radius: 10px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: #9b92ff;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    background-color: #FAF7FF;
+    border: 1px solid #918CB8;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 60px;
+    color: rgb(14, 0, 0);
+    font-family: 'Average Sans', sans-serif;
+    text-align: center;
+    background-color: #BEB8FF;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    
+}
+
+#mensajes{
+    width: 180px;
+    background: #FFFADE;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar{
+    border: transparent;
+    color: #03001d;
+    font-family: 'Average Sans', sans-serif;
+    border-radius: 10px;
+    border: 2px solid #8479ff;
+}
+
+.ataques{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    align-items: center;
+    justify-items: center;
+    color: white;
+}
+
+#vidas-jugador, #vidas-enemigo{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 560px){
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#ver-mapa button{
+    width: 65px;
+    height: 40px;
+    font-weight: bold;
+    background: rgb(128, 255, 238);
+    padding: 5px;
+    margin: 10px 0px;
+    border: 3px solid #9086ff;
+    border-radius: 4px;   
+    font-family: 'Average Sans', sans-serif;
+}
+
+@media(max-width: 360px){
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 360px){
+    #ver-mapa div{
+        flex-direction: column;
+    }
+}
